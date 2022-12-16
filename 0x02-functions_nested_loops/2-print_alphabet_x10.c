@@ -1,21 +1,7 @@
-/*
-******************************************************************************
-*                                                                            *
-*                                                 _____  ______    ____  ___ *
-*    5-printf.c                                  /  _  \ |    |    \   \/  / *
-*                                               /  /_\  \|    |     \     /  *
-*    By: Barahmou <hamabarhamou@gmail.com>     /    |    \    |___  /     \  *
-*                                              \____|__  /_______ \/___/\  \ *
-*    Created: 2022-03-10 13:29:43 by Barahmou          \/        \/      \_/ *
-*    Updated: 2022-03-10 13:29:43 by Barahmou                                *
-*                                                                            *
-******************************************************************************
-*/
-
 #include <stdlib.h>
 #include <string.h>
 #include "main.h"
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  *print_alphabet_x10 - function that prints 10 times the alphabet,
@@ -35,4 +21,3 @@ void print_alphabet_x10(void)
 	for (i = 0; i <= 9; i++)
 		system(cmd);
 }
-

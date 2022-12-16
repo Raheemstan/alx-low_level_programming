@@ -1,19 +1,5 @@
-/*
-******************************************************************************
-*                                                                            *
-*                                                 _____  ______    ____  ___ *
-*    5-printf.c                                  /  _  \ |    |    \   \/  / *
-*                                               /  /_\  \|    |     \     /  *
-*    By: Barahmou <hamabarhamou@gmail.com>     /    |    \    |___  /     \  *
-*                                              \____|__  /_______ \/___/\  \ *
-*    Created: 2022-03-10 13:29:43 by Barahmou          \/        \/      \_/ *
-*    Updated: 2022-03-10 13:29:43 by Barahmou                                *
-*                                                                            *
-******************************************************************************
-*/
-
 #include "main.h"
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  * print_times_table - prints the n times table, starting with 0
@@ -33,21 +19,24 @@ void print_times_table(int n)
 				if (j == 0)
 				{
 					_putchar(k + '0');
-				} else if (k < 10 && j != 0)
+				}
+				else if (k < 10 && j != 0)
 				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(k + '0');
-				} else if (k >= 10 && k < 100)
+				}
+				else if (k >= 10 && k < 100)
 				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 					_putchar((k / 10) + '0');
 					_putchar((k % 10) + '0');
-				} else if (k >= 100)
+				}
+				else if (k >= 100)
 				{
 					_putchar(',');
 					_putchar(' ');
@@ -60,4 +49,3 @@ void print_times_table(int n)
 		}
 	}
 }
-

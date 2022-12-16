@@ -1,19 +1,5 @@
-/*
-******************************************************************************
-*                                                                            *
-*                                                 _____  ______    ____  ___ *
-*    5-printf.c                                  /  _  \ |    |    \   \/  / *
-*                                               /  /_\  \|    |     \     /  *
-*    By: Barahmou <hamabarhamou@gmail.com>     /    |    \    |___  /     \  *
-*                                              \____|__  /_______ \/___/\  \ *
-*    Created: 2022-03-10 13:29:43 by Barahmou          \/        \/      \_/ *
-*    Updated: 2022-03-10 13:29:43 by Barahmou                                *
-*                                                                            *
-******************************************************************************
-*/
-
 #include "main.h"
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  *jack_bauer - a function that prints every minute of the day of Jack Bauer,
@@ -26,7 +12,7 @@ void jack_bauer(void)
 	int a = 0, b = 0, c = 0, d = 0;
 	int n = 9;
 
-	for (a = 0; a <= 2 ; a++)
+	for (a = 0; a <= 2; a++)
 	{
 		if (a == 2)
 			n = 3;
@@ -44,8 +30,6 @@ void jack_bauer(void)
 					_putchar('\n');
 				}
 			}
-
 		}
 	}
 }
-

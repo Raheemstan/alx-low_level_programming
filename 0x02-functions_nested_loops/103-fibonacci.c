@@ -1,19 +1,5 @@
-/*
-******************************************************************************
-*                                                                            *
-*                                                 _____  ______    ____  ___ *
-*    5-printf.c                                  /  _  \ |    |    \   \/  / *
-*                                               /  /_\  \|    |     \     /  *
-*    By: Barahmou <hamabarhamou@gmail.com>     /    |    \    |___  /     \  *
-*                                              \____|__  /_______ \/___/\  \ *
-*    Created: 2022-03-10 13:29:43 by Barahmou          \/        \/      \_/ *
-*    Updated: 2022-03-10 13:29:43 by Barahmou                                *
-*                                                                            *
-******************************************************************************
-*/
-
 #include "main.h"
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  * main - finds and prints the sum of the even-valued terms
@@ -44,4 +30,3 @@ int main(void)
 
 	return (0);
 }
-
