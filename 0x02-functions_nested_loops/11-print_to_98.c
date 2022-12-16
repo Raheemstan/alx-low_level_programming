@@ -13,23 +13,36 @@
 */
 
 #include "main.h"
+#include<stdio.h>
 
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
-
-int main(void)
+ * print_to_98 - prints all natural numbers from n to 98,
+ * followed by a new line
+ * @n: print from this number
+ */
+void print_to_98(int n)
 {
-	char chaine[] = "_putchar\n";
-	int i = 0;
+	int i;
 
-	while (chaine[i])
+	if (n < 98)
 	{
-		_putchar(chaine[i]);
-		i++;
+		for (i = n; i < 98; i++)
+		{
+			printf("%d", i);
+			printf(",");
+			printf(" ");
+		}
 	}
-	return (0);
-}
+	else
+	{
+		for (i = n; i > 98; i--)
+		{
+			printf("%d", i);
+			printf(",");
+			printf(" ");
+		}
+	}
 
+	printf("98\n");
+
+}

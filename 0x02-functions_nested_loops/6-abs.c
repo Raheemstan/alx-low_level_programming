@@ -15,21 +15,18 @@
 #include "main.h"
 
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
-
-int main(void)
+ *_abs - a function that computes the absolute value of an integer
+ *@n: The number
+ *
+ *Return: On success 1.
+ *On error, -1 is returned, and errno is set appropriately.
+ * Returns abs of the number
+ */
+int _abs(int n)
 {
-	char chaine[] = "_putchar\n";
-	int i = 0;
-
-	while (chaine[i])
-	{
-		_putchar(chaine[i]);
-		i++;
-	}
-	return (0);
+	if (n  <  0)
+		return (-1 * n);
+	else
+		return (n);
 }
 

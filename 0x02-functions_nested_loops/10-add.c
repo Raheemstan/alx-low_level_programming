@@ -15,21 +15,16 @@
 #include "main.h"
 
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
-
-int main(void)
+ *add - a function that adds two integers and returns the result.
+ *starting from 00:00 to 23:59.
+ *@a: the number
+ *@b: the number
+ *
+ *Return: On success 1.
+ *On error, -1 is returned, and errno is set appropriately.
+ */
+int add(int a, int b)
 {
-	char chaine[] = "_putchar\n";
-	int i = 0;
-
-	while (chaine[i])
-	{
-		_putchar(chaine[i]);
-		i++;
-	}
-	return (0);
+	return (a + b);
 }
 

@@ -13,23 +13,30 @@
 */
 
 #include "main.h"
+#include<stdio.h>
 
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
-
-int main(void)
+ *print_last_digit - a function that prints the last digit of a number.
+ *@n: The number
+ *
+ *Return: On success 1.
+ *On error, -1 is returned, and errno is set appropriately.
+ * Returns the value of the last digit
+ */
+int print_last_digit(int n)
 {
-	char chaine[] = "_putchar\n";
-	int i = 0;
+	int a;
 
-	while (chaine[i])
-	{
-		_putchar(chaine[i]);
-		i++;
-	}
-	return (0);
+	if (n < 0)
+		n = -n;
+
+	a = n % 10;
+
+	if (a < 0)
+		a = -a;
+
+	_putchar(a + '0');
+
+	return (a);
 }
 

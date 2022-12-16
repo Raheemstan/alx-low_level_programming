@@ -13,23 +13,32 @@
 */
 
 #include "main.h"
+#include<stdio.h>
 
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
-
+ * main - Prints first 50 Fibonacci numbers, starting with 1 and 2,
+ *        separated by a comma followed by a space.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-	char chaine[] = "_putchar\n";
-	int i = 0;
+	int count;
+	unsigned long fib1 = 0, fib2 = 1, sum;
 
-	while (chaine[i])
+	for (count = 0; count < 50; count++)
 	{
-		_putchar(chaine[i]);
-		i++;
+		sum = fib1 + fib2;
+		printf("%lu", sum);
+
+		fib1 = fib2;
+		fib2 = sum;
+
+		if (count == 49)
+			printf("\n");
+		else
+			printf(", ");
 	}
+
 	return (0);
 }
-

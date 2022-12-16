@@ -15,21 +15,18 @@
 #include "main.h"
 
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
+ * print_alphabet -  prints the alphabet, in lowercase, followed by a new line
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 
-int main(void)
+void print_alphabet(void)
 {
-	char chaine[] = "_putchar\n";
-	int i = 0;
+	int i;
 
-	while (chaine[i])
-	{
-		_putchar(chaine[i]);
-		i++;
-	}
-	return (0);
+	for (i = 97; i <= 122; i++)
+		_putchar(i);
+	_putchar('\n');
 }
 

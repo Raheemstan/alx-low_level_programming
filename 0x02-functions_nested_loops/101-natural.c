@@ -13,23 +13,26 @@
 */
 
 #include "main.h"
+#include<stdio.h>
 
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
-
+ * main - Lists all the natural numbers below 1024 (excluded)
+ *        that are multiples of 3 or 5.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-	char chaine[] = "_putchar\n";
-	int i = 0;
+	int i, sum = 0;
 
-	while (chaine[i])
+	for (i = 0; i < 1024; i++)
 	{
-		_putchar(chaine[i]);
-		i++;
+		if ((i % 3) == 0 || (i % 5) == 0)
+			sum += i;
 	}
+
+	printf("%d\n", sum);
+
 	return (0);
 }
 

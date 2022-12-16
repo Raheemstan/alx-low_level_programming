@@ -15,21 +15,31 @@
 #include "main.h"
 
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
-
-int main(void)
+ *print_sign - a function that prints the sign of a number
+ *@n: The number
+ *
+ *Return: On success 1.
+ *On error, -1 is returned, and errno is set appropriately.
+ * Returns 1 and prints + if n is greater than zero
+ * Returns 0 and prints 0 if n is zero
+ * Returns -1 and prints - if n is less than zero
+ */
+int print_sign(int n)
 {
-	char chaine[] = "_putchar\n";
-	int i = 0;
-
-	while (chaine[i])
+	if (n  > 0)
 	{
-		_putchar(chaine[i]);
-		i++;
+		_putchar('+');
+		return (1);
 	}
-	return (0);
+	else if (n  == 0)
+	{
+		_putchar('0');
+		return (0);
+	}
+	else
+	{
+		_putchar('-');
+		return (-1);
+	}
 }
 

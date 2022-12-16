@@ -12,24 +12,20 @@
 ******************************************************************************
 */
 
-#include "main.h"
-
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
-
-int main(void)
+ *_islower - a function that checks for lowercase character
+ *@c: The charactere
+ *
+ *Return: On success 1.
+ *On error, -1 is returned, and errno is set appropriately.
+ * Returns 1 if c is lowercase
+ * Returns 0 otherwise
+ */
+int _islower(int c)
 {
-	char chaine[] = "_putchar\n";
-	int i = 0;
-
-	while (chaine[i])
-	{
-		_putchar(chaine[i]);
-		i++;
-	}
-	return (0);
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	else
+		return (0);
 }
 

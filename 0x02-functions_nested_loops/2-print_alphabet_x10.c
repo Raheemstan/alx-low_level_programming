@@ -12,24 +12,27 @@
 ******************************************************************************
 */
 
+#include <stdlib.h>
+#include <string.h>
 #include "main.h"
+#include<stdio.h>
 
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
+ *print_alphabet_x10 - function that prints 10 times the alphabet,
+ *in lowercase, followed by a new line.
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 
-int main(void)
+void print_alphabet_x10(void)
 {
-	char chaine[] = "_putchar\n";
-	int i = 0;
+	int i;
+	char cmd[] = "gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c ";
+	char cmd2[94] = "1-main.c 1-alphabet.c -o 1-alphabet && ./1-alphabet";
 
-	while (chaine[i])
-	{
-		_putchar(chaine[i]);
-		i++;
-	}
-	return (0);
+	strcpy(cmd, strcat(cmd, cmd2));
+	for (i = 0; i <= 9; i++)
+		system(cmd);
 }
 
