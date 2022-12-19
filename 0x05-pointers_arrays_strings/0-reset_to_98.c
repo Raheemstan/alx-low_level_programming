@@ -1,9 +1,12 @@
 #include <stdio.h>
 
 /**
- * function to reset param to 98
- * @*n: int
- * return: void
+ * reset_to_98: function to reset param
+ * @n: int
+ * Description: A function to reset the value of the parameter
+ * n to 98 
+ * 
+ * Return: void
  *
  */
 
