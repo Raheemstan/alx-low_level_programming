@@ -1,23 +1,23 @@
-#include "main.h";
+#include "main.h"
 
 /**
- * print reverse string
- * @s: string
- * Return: new string
- *
+ * print_rev - function that takes a pointer to an int as parameter and
+ * @s: string of xters
+ * Return: void
  */
 
 void print_rev(char *s)
 {
-	int count = 0;
-	int out;
-	while(*s != '\0')
-	{
-		count++;
-		s++;
-	}
+	int i = 0;
 
-	s--;
+	while (s[i] != '\0')
+		i++;
+
+	i--;
+	while (i >= 0)
+	{
+		_putchar(s[i]);
+		i--;
+	}
 	_putchar('\n');
 }
-
