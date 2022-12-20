@@ -3,7 +3,7 @@
 
 /**
  * puts2 - print other xters with the first
- * str: string text
+ * @str: string text
  * Return: void
  */
 
