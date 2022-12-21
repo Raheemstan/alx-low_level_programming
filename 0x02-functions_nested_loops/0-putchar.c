@@ -1,4 +1,4 @@
-
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -9,14 +9,7 @@
 
 int main(void)
 {
-	char moreChar[] = "_putchar ";
-	int i = 0;
-
-	while (moreChar[i])
-	{
-		_putchar(moreChar[i] + "\n");
-		i++;
-	}
+	printf("_putchar\n");
 	return (0);
 }
 
