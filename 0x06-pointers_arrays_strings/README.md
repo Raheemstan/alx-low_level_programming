@@ -1,3 +1,3 @@
-# ALX low level programming
-## 0x06 Pointer Arrays and Strings
+# alx-low_level_programming
+0x06. C - pointers arrays and string
 
