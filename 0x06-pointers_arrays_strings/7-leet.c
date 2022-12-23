@@ -1,44 +1,29 @@
-#include<stdio.h>
-
+#include "main.h"
 /**
- * car - a function ...
- * @str1: the chaine of caractere
- * @str2: the chaine of caractere
- * @c: the caractere
- *
- * Return: char
+ * leet - encodes a string into 1337
+ * @s: input string.
+ * Return: the pointer to dest.
  */
 
-char car(char *str1, char *str2, char c)
+char *leet(char *s)
 {
-	int i;
+	int count = 0, i;
+	int low_letters[] = {97, 101, 111, 116, 108};
+	int upp_letters[] = {65, 69, 79, 84, 76};
+	int numbers[] = {52, 51, 48, 55, 49};
 
-	for (i = 0; i <= 9; i++)
+	while (*(s + count) != '\0')
 	{
-		if (c == str1[i])
-			return (str2[i]);
+		for (i = 0; i < 5; i++)
+		{
+			if (*(s + count) == low_letters[i] || *(s + count) == upp_letters[i])
+			{
+				*(s + count) = numbers[i];
+				break;
+			}
+		}
+		count++;
 	}
-	return (c);
+
+	return (s);
 }
-
-/**
- * leet - a function ...
- * @str: the chaine of caractere
- *
- * Return: str
- */
-
-char	*leet(char *str)
-{
-	char alp1[] = "aAeEoOtTlL";
-	char alp2[] = "4433007711";
-	int i = 0;
-
-	while (str[i])
-	{
-		str[i] = car(alp1, alp2, str[i]);
-		i++;
-	}
-	return (str);
-}
-
