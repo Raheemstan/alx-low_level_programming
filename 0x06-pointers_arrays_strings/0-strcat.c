@@ -8,15 +8,14 @@
  * Return: 1 or 0
  */
 
-char	*_strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
-	int	i;
-	int	j;
+	int i = 0;
+	int j = 0;
 
-	i = 0;
-	j = 0;
 	while (dest[i] && dest[i] != '\0')
 		i++;
+
 	while (src[j])
 	{
 		dest[i] = src[j];
@@ -26,3 +25,4 @@ char	*_strcat(char *dest, char *src)
 	dest[i] = '\0';
 	return (dest);
 }
+
