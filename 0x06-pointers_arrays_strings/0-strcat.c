@@ -1,21 +1,23 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * _strcat - a function ...
- * @dest: the chaine
- * @src: the chaine
+ * _strcat - concatenate strings
  *
- * Return: 1 or 0
+ * @dest: begin new string
+ * @src: end new string
+ *
+ * Return: new string
+ *
  */
 
 char *_strcat(char *dest, char *src)
 {
-	int i = 0;
-	int j = 0;
+	int i=0;
+	int j=0;
 
-	while (dest[i] && dest[i] != '\0')
+	while (dest[i] && dest[i] !='\0')
 		i++;
-
 	while (src[j])
 	{
 		dest[i] = src[j];
@@ -23,6 +25,6 @@ char *_strcat(char *dest, char *src)
 		j++;
 	}
 	dest[i] = '\0';
-	return (dest);
+	resturn (dest);
 }
 
