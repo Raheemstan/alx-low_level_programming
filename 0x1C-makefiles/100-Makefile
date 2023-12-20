@@ -1,0 +1,37 @@
+CC = gcc
+
+SRC = $(wildcard *.c)
+
+OBJ = $(SRC:.c=.o)
+
+NAME = school
+
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+RM := rm -f
+
+.PHONY: all clean fclean oclean re
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+	$(RM) *~ $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+	$(RM) $(NAME)
+
+re: fclean all
+
+# Check if m.h exists
+ifeq (,$(wildcard m.h))
+$(error "m.h" not found!)
+endif
